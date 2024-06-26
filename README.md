@@ -16,6 +16,7 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 ```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
+
 contract Example {
     uint public a;
 
@@ -25,19 +26,19 @@ contract Example {
         a = _a;
     }
 
-    // Function to check an invariant using 'assert'
-    function checkA() public view {
-        assert(a > 1); // This should always be true if setA is used correctly
+    // Function to check an invariant using 'require' with a parameter
+    function checkA(uint _valueToCheck) public view {
+        require(a > _valueToCheck, "The value of 'a' should be greater than the provided value.");
     }
 
     // Function to check voting age using 'revert'
-    function votingAge(uint _age) public pure  {
+    function votingAge(uint _age) public pure {
         if (_age < 18) {
             revert("You are not eligible for voting as you are less than 18 years old.");
         }
-       
     }
 }
+
 ```
 ## Executing program
 ### How to Run the Program
