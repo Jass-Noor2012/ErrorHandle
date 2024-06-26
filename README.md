@@ -1,13 +1,13 @@
 # ErrorHandling
 A program to handle errors that might occur in the contract.
 
-##Description
+## Description
 This is a simple solidity contract to handle errors that might cause problem in execution.The checkA function in the Example contract verifies that the state variable a remains greater than 1 using an assert statement. Testing involves setting a to different values and observing if checkA behaves correctly by either passing or triggering an assertion failure when a is 1 or less.
 
 
-##Getting Started
+## Getting Started
 
-###Installing
+### Installing
 
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
@@ -39,21 +39,21 @@ contract Example {
     }
 }
 ```
-#Executing program
-##How to Run the Program
+## Executing program
+### How to Run the Program
 Navigate to the project directory
 Compile the Solidity contract
 Deploy the contract using your preferred Ethereum development environment
 
-##For Remix:
+### For Remix:
 Open Remix IDE.
 Upload methods.sol.
 Compile and deploy the contract.
 
-##Authors
+### Authors
 Jasnoor Kaur @Jass-Noor2012
 
-##License
+### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 We have established a solidity contract with this code.
