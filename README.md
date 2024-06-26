@@ -7,7 +7,7 @@ This is a simple solidity contract to handle errors that might cause problem in 
 
 ##Getting Started
 
-###Program Execution
+###Installing
 
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
@@ -39,10 +39,22 @@ contract Example {
     }
 }
 ```
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile methods.sol" button.
+#Executing program
+##How to Run the Program
+Navigate to the project directory
+Compile the Solidity contract
+Deploy the contract using your preferred Ethereum development environment
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the contract from the dropdown menu, and then click on the "Deploy" button.
+##For Remix:
+Open Remix IDE.
+Upload methods.sol.
+Compile and deploy the contract.
 
+##Authors
+Jasnoor Kaur @Jass-Noor2012
 
+##License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
+We have established a solidity contract with this code.
 
