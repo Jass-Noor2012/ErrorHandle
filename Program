@@ -3,16 +3,19 @@ pragma solidity 0.8.18;
 
 contract Example {
     uint public a;
+    uint public h = 50;
+    uint public j;
 
     // Function to set the value of 'a' with a check using 'require'
     function setA(uint _a) public {
-        require(_a > 1, "The given value of 'a' should be greater than one.");
+        require(_a > 1, "The given value of 'a' should be greater than one.");  
         a = _a;
+        j = h + a;  
     }
 
     // Function to check an invariant using 'assert'
-    function checkA() public view {
-        assert(a > 1); // This should always be true if setA is used correctly
+    function checkJ() public view {
+        assert(j > 100); // This should always be true if setJ is used correctly
     }
 
     // Function to check voting age using 'revert'
@@ -23,3 +26,4 @@ contract Example {
        
     }
 }
+
